@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title id="titles">Survey Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1 id="title">Survey Form</h1>
+  <p id="description">Thank you for taking the time to help us improve the platform</p>
+  <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg"/>
+
+  <form id="survey-form" action="POST">
+    <div class="form">
+    <label id="name-label">Name: 
+    <input class="form-control" id="name" placeholder="Name" type="text" required>
+    </label>
+    </div>
+    <div class="form">
+    <label id="name-label">Age: 
+    <input class="form-control" id="number" placeholder="Age" type="number" min="13" max="120"  required>
+    </label>
+    </div>
+    <div class="form">
+    <label id="email-label">Email: 
+       </label><input class="form-control" id="email" placeholder="Email" type="email" required />
+    </div>
+    <div class="form">
+    <label id="number-label">Phone:    </label>
+    <input class="form-control" id="number" placeholder="+91 1234567890" type="tel" pattern='^[6789]\d{9,9}$' required/>
+ 
+    </div>
+    <div class="form">
+    <label id="Gender-label">Gender: 
+<select class="form-control" id="dropdown" required>
+  <option value="Choose" name="gender">Choose one</option>
+  <option value="Male" name="gender">Male</option>
+  <option value="Female" name="gender">Female</option>
+  <option value="Other" name="gender">Other</option>
+</select>
+</label>
+</div>
+<div class="form">
+  <label>
+  Did you like this form:</label><br>
+  <input  type="radio" name="Choose" value="yes">Yes
+   <input type="radio" name="Choose" value="No">No
+  </div>
+  <div class="form">
+  <label>Choose tech you like:</label><br>
+  <input type="checkbox" name="Choose" value="Python">Python
+   <input type="checkbox" name="Choose" value="C">C
+   <input type="checkbox" name="Choose" value="C++">C++
+  </div>
+  <div class="form">
+    <label>Write your suggestion:</label><br>
+    <textarea class="form-control" placeholder="I..."></textarea>
+    </div>
+  <input class="form-control" type="submit" id="submit"/>
+  </form
+</body
+  </html>
