@@ -20,6 +20,7 @@ body {
   font-weight: 400;
   line-height: 1.4;
   color: var(--main-white);
+  overflow-x: hidden;
 }
 nav{
   top:0;
@@ -31,6 +32,7 @@ nav{
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
   z-index: 10;
   width:100%;
+  border-bottom: 1px solid white;
 }
 
 * {
@@ -44,16 +46,20 @@ nav{
 
   .Ulist {
     margin: 0 1rem;
+   
   }
 }
 .Ulist{
   display:flex;
   margin-right: 2rem;
+  list-style-type: none;
 }
 .Ulist a {
   display: block;
+  text-decoration: none;
   font-size: 2.2rem;
   padding: 2rem;
+  list-style-type: none;
 }
 .Ulist a:hover {
   background: var(--main-white);
@@ -103,36 +109,6 @@ color:var(--main-red);
 }
 h2:hover{
 color:var(--main-red);
-}
-.projects {
-  text-align: center;
-  padding: 10rem 2rem;
-  background: var(--main-blue);
-}
-.project-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  grid-gap: 4rem;
-  width: 100%;
-  max-width: 1280px;
-  margin: 0 auto;
-  margin-bottom: 6rem;
-}
-
-.project-img{
-   height: calc(100% - 6.8rem);
-  width: 100%;
-  object-fit: cover;
-}
-
-.project-title{
-  color:white;
-  font-size: 2rem;
-  padding: 2rem 0.5rem;
-}
-
-.projects:hover .project-title {
-  color: #ff7f50;
 }
 
 footer > p{
@@ -300,12 +276,10 @@ footer i {
     #ff1361 67%,
     #fff800 100%
   );
-  background-size: auto auto;
-  background-clip: border-box;
+  
   background-size: 200% auto;
   color: #fff;
   background-clip: text;
-  text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: textclip 2s linear infinite;
@@ -324,6 +298,32 @@ footer i {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 4rem;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+}
+
+.project-img{
+   height: calc(100% - 6.8rem);
+  width: 100%;
+  object-fit: cover;
+}
+
+.project-title{
+  color:#231557;
+  font-size: 2rem;
+  display: inline;
+  padding: 2rem 0.5rem;
+}
+
+.project-title:hover {
+  color: #ff7f50;
 }
 .waviy {
   position: relative;
@@ -350,6 +350,7 @@ footer i {
 }
 .waviy2 {
   position: relative;
+  left: 40%;
 }
 .waviy2 span {
   -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
@@ -417,7 +418,7 @@ footer i {
   color:pink;
 }
 .dropping-texts > div:nth-child(4) {
-  animation: roll2 5s linear infinite 3s;
+  animation: roll 5s linear infinite 3s;
   color:#99ff99;
 }
 
@@ -460,42 +461,3 @@ footer i {
     transform: rotate(15deg);
   }
 }
-@keyframes roll2 {
-  0% {
-    font-size:0px;
-    opacity:0;
-    margin-left:-30px;
-    margin-top:0px;
-    transform: rotate(-25deg);
-  }
-  3% {
-    opacity:1;
-    transform: rotate(0deg);
-  }
-  5% {
-    font-size:inherit;
-    opacity:1;
-    margin-left:0px;
-    margin-top:0px;
-  }
-  30% {
-    font-size:inherit;
-    opacity:1;
-    margin-left:0px;
-    margin-top:0px;
-    transform: rotate(0deg);
-  }
-  37% {
-    font-size:1500px;
-    opacity:0;
-    margin-left:-1000px;
-    margin-top:-800px;
-  }
-  100% {
-    font-size:0px;
-    opacity:0;
-    margin-left:-30px;
-    margin-top:0px;
-  }
-}
-
