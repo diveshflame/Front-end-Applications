@@ -1,2 +1,2 @@
 # New
-This Are the Fron-end projects created using Html and Css
+This are the Front-end projects created using Html and Css
